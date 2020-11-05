@@ -1,7 +1,75 @@
 body{
     background-color: #FFC2B4;
     font-family: 'Source Code Pro', monospace;
+    margin: 0px;
 }
-
+a{
+    text-decoration: none;
+}
+h1{
+    font-size: 90px;
+    text-shadow: 5px 5px #F8FFA3;
+    
+}
+#top-navbar {
+    background-color: #BBC6D2;
+    padding: 40px;
+    text-align: center;
+    text-shadow: 2px 2px #F8FFA3;
+}
+.social-link-image {
+    height: 40px;
+}
+.indent-left{
+    padding-left: 30px;
+}
+#profile-photo {
+    border-radius: 50%;
+    height: 400px;
+    float: right;
+}
+#home-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 100px;
+}
+#socials-under-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    float: right;
+}
+#socials-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 160px;
+    padding-top: 10px;
+}
+@media only screen and (max-width: 600px) {
+    #top-navbar{
+        width: 100%;
+        padding-top:40px;
+        padding-bottom: 40px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #home-content{
+        padding:20px;
+    }
+    h1{
+        font-size: 60px;
+    }
+    #profile-photo{
+        height: 300px;
+    }
+    
+    
+  }
 // Colour palette
 //Skobelf: 156064 Caribean Green: 00C49A Napales Yellow: F8E16C Melon: FFC2B4 Coral: FB8F67
