@@ -59,7 +59,7 @@ h1 {
   padding-top: 10px;
 }
 
-#about-page-top {
+#general-page-top {
   display: flex;
   justify-content: space-between;
   padding-left: 20px;
@@ -134,8 +134,48 @@ textarea {
   background-color: #BBC6D2;
 }
 
+#blog-page-content {
+  display: flex;
+  align-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.blog-post {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  align-items: center;
+  background-image: radial-gradient(#BBC6D2, transparent);
+  padding: 20px;
+  margin: 20px;
+}
+
+.blog-image {
+  width: 300px;
+  border-radius: 50%;
+  padding: 20px;
+}
+
+.blog-link {
+  text-decoration: none;
+}
+
+.project-post {
+  display: flex;
+  padding: 40px;
+  background-image: radial-gradient(#BBC6D2, transparent);
+  margin-top: 60px;
+}
+
+.project-image {
+  width: 300px;
+  border-radius: 50%;
+  padding: 30px;
+}
+
 @media only screen and (max-width: 1060px) {
-  #about-page-top {
+  #general-page-top {
     flex-wrap: wrap-reverse;
     justify-content: center;
     align-content: center;
@@ -174,11 +214,29 @@ textarea {
   .photo-to-right {
     display: flex;
     flex-direction: column;
+    margin: 20px;
   }
 
   .photo-to-left {
     display: flex;
     flex-direction: column;
+  }
+
+  #about-page-content {
+    padding: 10px;
+  }
+
+  .project-post {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+    margin: 10px;
+  }
+
+  .project-image {
+    width: 200px;
+    padding: 10px;
   }
 }
 
