@@ -31,7 +31,6 @@ h1 {
 #profile-photo {
   border-radius: 50%;
   height: 400px;
-  float: right;
 }
 
 #home-content {
@@ -60,6 +59,93 @@ h1 {
   padding-top: 10px;
 }
 
+#about-page-top {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+}
+
+.about-heading-text {
+  display: flex;
+  flex-direction: column;
+}
+
+#about-page-content {
+  display: flex;
+  flex-direction: column;
+  padding: 90px;
+  justify-content: space-between;
+  text-align: justify;
+  align-items: center;
+}
+
+.about-photo {
+  border-radius: 50%;
+  height: 240px;
+  width: 240px;
+  margin: 20px;
+}
+
+.photo-to-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.photo-to-left {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+#contact-left-content {
+  display: flex;
+  flex-direction: column;
+  float: left;
+  align-items: center;
+  padding: 20px;
+}
+
+#contact-right-content {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  padding: 3vw;
+}
+
+#submit-button {
+  width: 80px;
+  background-color: #BBC6D2;
+  font-family: "Source Code Pro", monospace;
+  align-self: center;
+}
+
+input {
+  background-color: #BBC6D2;
+}
+
+textarea {
+  background-color: #BBC6D2;
+}
+
+@media only screen and (max-width: 1060px) {
+  #about-page-top {
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    align-content: center;
+    padding-top: 20px;
+  }
+
+  .about-page-content {
+    padding: 0px;
+  }
+}
 @media only screen and (max-width: 600px) {
   #top-navbar {
     width: 100%;
@@ -79,6 +165,20 @@ h1 {
 
   #profile-photo {
     height: 300px;
+  }
+
+  #about-page-content {
+    flex-wrap: wrap;
+  }
+
+  .photo-to-right {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .photo-to-left {
+    display: flex;
+    flex-direction: column;
   }
 }
 
