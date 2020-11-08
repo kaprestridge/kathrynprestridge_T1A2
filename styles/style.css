@@ -30,12 +30,6 @@ a:visited {
   color: inherit;
 }
 
-a:hover {
-  font-size: larger;
-  transition: 1s;
-  text-shadow: 4px 4px #F8FFA3;
-}
-
 h1 {
   font-size: 90px;
   text-shadow: 5px 5px #F8FFA3;
