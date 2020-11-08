@@ -1,11 +1,39 @@
+html body {
+  height: 100%;
+}
+
 body {
+  display: flex;
+  flex-direction: column;
   background-color: #FFC2B4;
   font-family: "Source Code Pro", monospace;
   margin: 0px;
 }
 
+.content {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex-shrink: 0;
+  align-self: center;
+  padding-top: 80px;
+}
+
 a {
   text-decoration: none;
+  transition: 1s;
+  color: black;
+}
+
+a:visited {
+  color: inherit;
+}
+
+a:hover {
+  font-size: larger;
+  transition: 1s;
+  text-shadow: 4px 4px #F8FFA3;
 }
 
 h1 {
@@ -22,6 +50,10 @@ h1 {
 
 .social-link-image {
   height: 40px;
+}
+
+.social-link-image:hover {
+  background-image: radial-gradient(#F8FFA3, transparent);
 }
 
 .indent-left {
