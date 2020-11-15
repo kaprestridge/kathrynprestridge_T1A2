@@ -98,6 +98,14 @@ h1 {
   flex-direction: column;
 }
 
+.link-to-cv {
+  text-shadow: 2px 2px #F8FFA3;
+  background-color: #BBC6D2;
+  border-radius: 50%;
+  padding: 20px;
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+}
+
 #about-page-content {
   display: flex;
   flex-direction: column;

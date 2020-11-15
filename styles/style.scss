@@ -25,11 +25,7 @@ a{
 a:visited{
     color: inherit;
 }
-// a:hover{
-//     font-size: larger;
-//     transition: 1s;
-//     text-shadow: 4px 4px #F8FFA3;
-// }
+
 h1{
     font-size: 90px;
     text-shadow: 5px 5px #F8FFA3;
@@ -50,6 +46,7 @@ h1{
 .social-link-image:hover{
    background-image:radial-gradient(#F8FFA3, transparent);
 }
+//This class is for the second line of any h1 text to indent it slightly to the left
 .indent-left{
     padding-left: 30px;
 }
@@ -81,7 +78,9 @@ h1{
     width: 160px;
     padding-top: 10px;
 }
-
+// This class is for all pages that have the same top content
+//with the profile picture to the left, title in the center and
+//the link to socials on the right.
 #general-page-top{
     display: flex;
     justify-content: space-between;
@@ -92,6 +91,14 @@ h1{
 .about-heading-text{
     display: flex;
     flex-direction: column;
+}
+//link to cv button could be used for other button styling in future
+.link-to-cv{
+    text-shadow: 2px 2px #F8FFA3;
+    background-color:  #BBC6D2;
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: 2px 2px rgba(0,0,0,0.2);
 }
 #about-page-content{
     display: flex;
@@ -117,6 +124,7 @@ h1{
     flex-direction: row-reverse;
     align-items: center;
 }
+//styling for contact form header which has a significantly different layout to other pages
 #contact-left-content{
     display: flex;
     flex-direction: column;
@@ -187,6 +195,7 @@ textarea{
 }
 
 
+// media query for a breaking point on the page topper
 @media only screen and (max-width: 1060px){
     #general-page-top{
         flex-wrap: wrap-reverse;
@@ -200,6 +209,7 @@ textarea{
     }
 }
 
+//media query for mobile view
 @media only screen and (max-width: 600px) {
     #top-navbar{
         width: 100%;
